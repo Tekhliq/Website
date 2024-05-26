@@ -32,7 +32,7 @@ export default function Component() {
         <section className="absolute top-0 w-full min-h-screen py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-2 mb-10">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Unlock the Power of
                 </h1>
@@ -45,10 +45,10 @@ export default function Component() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none ">
                   Tekhliq Labs
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                {/* <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   Our AI consulting services help businesses harness the power of artificial intelligence to drive
                   innovation and growth.
-                </p>
+                </p> */}
               </div>
               <div className="mt-20">
                 <Link
@@ -61,18 +61,21 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <section id="services" className="w-full  bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                  {/* <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                     AI Consulting Services
-                  </div>
+                  </div> */}
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Rapid Prototyping</h2>
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    We help business to realize the value of AI, We provide Proof of Concept (POC) within a month. POC
-                    focuses on implementing practical and scalable solutions.
+                    We help businesses realize the value of AI.{" "}
+                    <span className="underline decoration-purple-600">
+                      Our Proof of Concept (POC) is delivered within a month
+                    </span>
+                    , focusing on practical and scalable solutions
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -86,34 +89,34 @@ export default function Component() {
               </div>
               <img
                 alt="AI Consulting"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                className="mx-auto  overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
-                src="/placeholder.svg"
+                src="/prototype.svg"
                 width="550"
               />
             </div>
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 ">
+        <section className="w-full py-10 ">
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <img
                 alt="AI Consulting"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full "
-                height="310"
-                src="/placeholder.svg"
-                width="550"
+                className="mx-auto   overflow-hidden rounded-xl object-cover object-center  "
+                height="200px"
+                src="/strategy.svg"
+                width="500px"
               />
               <div className="flex flex-col justify-center space-y-4 lg:order-last">
                 <div className="space-y-2">
-                  <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                  {/* <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
                     AI Consulting Services
-                  </div>
+                  </div> */}
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">AI Strategy Development</h2>
                   <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    Our team of AI experts will work with you to develop a customized AI strategy, implement
-                    cutting-edge AI technologies, and optimize your AI-powered solutions for maximum impact.
+                    Our team of AI experts collaborates with you to develop a customized AI strategy, implement
+                    cutting-edge technologies, and optimize AI-powered solutions for maximum impact.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
