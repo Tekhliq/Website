@@ -102,7 +102,7 @@ export default function Component() {
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <img
                 alt="AI Consulting"
-                className="mx-auto   overflow-hidden rounded-xl object-cover object-center  "
+                className=" overflow-hidden rounded-xl object-cover object-center  "
                 height="200px"
                 src="/strategy.svg"
                 width="500px"
