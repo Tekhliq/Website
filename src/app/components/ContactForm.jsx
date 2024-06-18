@@ -1,75 +1,47 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Bebas_Neue } from "next/font/google";
-import { Button } from "./ui/Button";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 const bebas = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
-const ContactForm = () => {
+import { useForm, ValidationError } from '@formspree/react';
+
+function ContactForm() {
   const [state, handleSubmit] = useForm("xqkrrwjl");
-
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+      return <p>Thank you for contacting us!</p>;
   }
-
   return (
-    <section
-      id="Contact"
-      className="flex flex-col px-80 border-b-[1px] py-20 text-black gap-16 items-center border-black border-opacity-20"
-    >
-      <h2 className={`${bebas.className} text-4xl font-semibold`}>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="flex gap-4">
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-sm mb-2">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full px-4 py-2 border bg-[#F4F7FA] border-white border-opacity-20 rounded-md focus:outline-none focus:border-opacity-40"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-sm mb-2">
-              Email Address
-            </label>
-            <input
-              id="email"
-              type="email" 
-              name="email"
-              className="w-full px-4 py-2 border bg-[#F4F7FA] border-white border-opacity-20 rounded-md focus:outline-none focus:border-opacity-40"
-            />
-            <ValidationError 
-              prefix="Email" 
-              field="email"
-              errors={state.errors}
-            />
-          </div>
-        </div>
-        <div className="mb-6">
-          <label htmlFor="message" className="block text-sm mb-2">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            className="w-full px-4 py-2 border bg-[#F4F7FA] border-white border-opacity-20 rounded-md focus:outline-none focus:border-opacity-40"
-          />
-          <ValidationError 
-            prefix="Message" 
-            field="message"
-            errors={state.errors}
-          />
-        </div>
-        <Button type="submit" className="w-full py-2 bg-gray-300 rounded-md text-black font-semibold hover:bg-gray-400" disabled={state.submitting}>
-          Submit
-        </Button>
-      </form>
-    </section>
+    <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <div className="flex flex-col gap-2 text-left">
+        <Label htmlFor="name">
+          Name
+        </Label>
+        <Input id="name" placeholder="John Doe" type="text" />
+      </div>
+      <div className="flex flex-col gap-2 text-left">
+        <Label htmlFor="email">
+          Email
+        </Label>
+        <Input id="email" name="email" placeholder="john@example.com" type="email" />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+      </div>
+      <div className="flex flex-col gap-2 text-left">
+        <Label htmlFor="message">
+          Message
+        </Label>
+        <Textarea id="message" name="message" placeholder="How can we help you?" rows={4} />
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
+      </div>
+      <Button type="submit" disabled={state.submitting} className="bg-gradient-to-r from-purple-500 to-indigo-600 text-gray-200">
+        Submit
+      </Button>
+    </form>
   );
-};
+}
 
 export default ContactForm;

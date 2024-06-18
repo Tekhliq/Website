@@ -1,10 +1,7 @@
 "use client";
 import Link from "next/link";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import Script from "next/script";
+import ContactForm from "./components/ContactForm";
 
 export default function Component() {
   return (
@@ -141,29 +138,7 @@ export default function Component() {
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2">
-                <form className="flex flex-col space-y-4">
-                  <div className=" flex flex-col gap-2">
-                    <Label htmlFor="name" className="text-left">
-                      Name
-                    </Label>
-                    <Input id="name" placeholder="John Doe" type="text" />
-                  </div>
-                  <div className=" flex flex-col gap-2">
-                    <Label htmlFor="email" className="text-left">
-                      Email
-                    </Label>
-                    <Input id="email" placeholder="john@example.com" type="email" />
-                  </div>
-                  <div className=" flex flex-col gap-2">
-                    <Label htmlFor="message" className="text-left">
-                      Message
-                    </Label>
-                    <Textarea id="message" placeholder="How can we help you?" rows={4} />
-                  </div>
-                  <Button type="submit" className="bg-gradient-to-r from-purple-500 to-indigo-600 text-gray-200">
-                    Submit
-                  </Button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
