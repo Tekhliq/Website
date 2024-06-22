@@ -13,6 +13,7 @@ function ContactForm() {
   if (state.succeeded) {
     return <p>Thank you for contacting us!</p>;
   }
+  
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
       <div className="flex flex-col gap-2 text-left">
