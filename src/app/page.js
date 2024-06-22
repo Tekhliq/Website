@@ -161,8 +161,11 @@ export default function Component() {
                   AI Strategy Development
                 </h2>
                 <p className="text-gray-500 text-base sm:text-lg dark:text-gray-400">
-                  Our team of AI experts collaborates with you to develop a
-                  customized AI strategy, implement cutting-edge technologies,
+                  Our team of AI experts collaborates with you to{" "}
+                  <span className="underline decoration-purple-600">
+                    develop a customized AI strategy,
+                  </span>{" "}
+                    implement cutting-edge technologies,
                   and optimize AI-powered solutions for maximum impact.
                 </p>
                 <div className="flex gap-2 justify-center md:justify-start">
