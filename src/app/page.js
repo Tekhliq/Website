@@ -28,7 +28,7 @@ export default function Component() {
           <h3 className="text-2xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">
             TL
           </h3>
-          <p>Tekhliq Labs</p>
+          <p className="hidden md:block">Tekhliq Labs</p>
           <span className="sr-only">AI Consulting</span>
         </Link>
         <div className="ml-auto flex items-center">
@@ -78,8 +78,8 @@ export default function Component() {
         </div>
       </header>
       <main className="flex-1">
-        <section id="particles-js" className="mt-[50px] md:mt-[150px]"></section>
-        <section className="relative top-0 w-full min-h-screen md:min-h-screen py-12 md:py-0 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-800px]">
+        <section id="particles-js" className="mt-[50px]"></section>
+        <section className="relative top-0 w-full min-h-screen md:min-h-screen py-12 md:py-0 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-680px]">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2 mb-4">
@@ -203,9 +203,13 @@ export default function Component() {
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
         onLoad={() => {
-          particlesJS.load("particles-js", "/particlesjs-config.json", function () {
-            console.log("callback - particles.js config loaded");
-          });
+          particlesJS.load(
+            "particles-js",
+            "/particlesjs-config.json",
+            function () {
+              console.log("callback - particles.js config loaded");
+            }
+          );
         }}
       />
     </div>
