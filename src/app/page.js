@@ -1,9 +1,12 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Script from "next/script";
 import ContactForm from "./components/ContactForm";
 
 export default function Component() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="relative flex flex-col min-h-[100dvh]">
       <header className="absolute top-0 w-full px-4 lg:px-6 h-14 flex items-center justify-between z-10">
@@ -14,15 +17,24 @@ export default function Component() {
           <p>Tekhliq Labs</p>
           <span className="sr-only">AI Consulting</span>
         </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4 cursor-pointer" href="#services">
-            Services
-          </Link>
-
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
-            Contact
-          </Link>
-        </nav>
+        <div className="ml-auto flex items-center">
+          <button
+            className="lg:hidden flex items-center justify-center p-2 rounded-md text-white hover:text-gray-100 focus:outline-none"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
+            </svg>
+          </button>
+          <nav className={`lg:flex gap-4 sm:gap-6 ${isMobileMenuOpen ? "absolute top-12 left-0 w-full h-28 bg-black shadow-lg py-4 flex flex-col items-center justify-around" : "hidden"} lg:block`}>
+            <Link className="text-sm font-medium hover:underline underline-offset-4 cursor-pointer" href="#services">
+              Services
+            </Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact">
+              Contact
+            </Link>
+          </nav>
+        </div>
       </header>
       <main className="flex-1">
         <section id="particles-js"></section>
@@ -33,7 +45,7 @@ export default function Component() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Unlock the Power of
                 </h1>
-                <h1 className=" text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">
                     LLM Applications
                   </span>{" "}
@@ -43,7 +55,7 @@ export default function Component() {
                   Tekhliq Labs
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Helping Businesses Realize Value from AI
+                  Helping Businesses Realize Value from AI
                 </p>
               </div>
               <div className="mt-20">
@@ -57,7 +69,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section id="services" className="w-full  bg-gray-100 dark:bg-gray-800">
+        <section id="services" className="w-full bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -85,7 +97,7 @@ export default function Component() {
               </div>
               <img
                 alt="AI Consulting"
-                className="mx-auto  overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+                className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
                 src="/prototype.svg"
                 width="550"
@@ -93,13 +105,12 @@ export default function Component() {
             </div>
           </div>
         </section>
-
-        <section className="w-full py-10 ">
+        <section className="w-full py-10">
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <img
                 alt="AI Consulting"
-                className=" overflow-hidden rounded-xl object-cover object-center  "
+                className="overflow-hidden rounded-xl object-cover object-center"
                 height="200px"
                 src="/strategy.svg"
                 width="500px"
