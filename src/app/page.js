@@ -38,7 +38,7 @@ export default function Component() {
       </header>
       <main className="flex-1">
       <section id="particles-js" className="mt-[50px]"></section>
-      <section className="relative top-0 w-full min-h-screen md:min-h-0 py-12 md:py-24 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-680px]">
+      <section className="relative top-0 w-full min-h-screen md:min-h-screen py-12 md:py-0 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-680px]">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2 mb-4">
@@ -58,18 +58,17 @@ export default function Component() {
                   Helping Businesses Realize Value from AI
                 </p>
               </div>
-              <div className="mt-10 sm:mt-20">
-                <Link
-                  className="inline-flex h-9 items-center justify-center rounded-md bg-gradient-to-r from-purple-500 to-indigo-600 px-4 py-2 text-sm font-medium text-gray-200 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                  href="#contact"
-                >
-                  Get Started
-                </Link>
-              </div>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link
+                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#contact"
+                  >
+                    Learn More
+                  </Link>
+                </div>
             </div>
           </div>
         </section>
-
         <section id="services" className="w-full bg-gray-100 dark:bg-gray-800 py-10">
         <div className="container px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
@@ -82,12 +81,14 @@ export default function Component() {
                 </span>{" "}
                 focusing on practical and scalable solutions.
               </p>
-              <Link
-                className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex items-center justify-center rounded-md px-8 py-3 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-gray-950"
-                href="#contact"
-              >
-                Learn More
-              </Link>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link
+                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#contact"
+                  >
+                    Learn More
+                  </Link>
+                </div>
             </div>
             <img
               alt="AI Consulting"
@@ -111,12 +112,14 @@ export default function Component() {
                 Our team of AI experts collaborates with you to develop a customized AI strategy, implement
                 cutting-edge technologies, and optimize AI-powered solutions for maximum impact.
               </p>
-              <Link
-                className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex items-center justify-center rounded-md px-8 py-3 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-gray-950"
-                href="#contact"
-              >
-                Learn More
-              </Link>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link
+                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    href="#contact"
+                  >
+                    Learn More
+                  </Link>
+                </div>
             </div>
           </div>
         </div>
