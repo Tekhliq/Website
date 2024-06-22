@@ -130,9 +130,9 @@ export default function Component() {
                   </span>{" "}
                   focusing on practical and scalable solutions.
                 </p>
-                <div className="flex flex-col items-center justify-center gap-2 min-[400px]:flex-row min-[400px]:items-start w-full">
+                <div className="flex gap-2 justify-center md:justify-start">
                   <Link
-                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300 w-full max-w-[300px] sm:w-auto"
+                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300 w-full max-w-[300px] sm:w-auto"
                     href="#contact"
                   >
                     Learn More
@@ -165,7 +165,7 @@ export default function Component() {
                   customized AI strategy, implement cutting-edge technologies,
                   and optimize AI-powered solutions for maximum impact.
                 </p>
-                <div className="flex flex-col items-center justify-center gap-2 min-[400px]:flex-row min-[400px]:items-start w-full">
+                <div className="flex gap-2 justify-center md:justify-start">
                   <Link
                     className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300 w-full max-w-[300px] sm:w-auto"
                     href="#contact"
