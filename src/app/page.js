@@ -116,7 +116,7 @@ export default function Component() {
         >
           <div className="container px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-              <div className="flex flex-col justify-center space-y-4">
+              <div className="order-2 md:order-1 flex flex-col justify-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                   Rapid Prototyping
                 </h2>
@@ -127,9 +127,9 @@ export default function Component() {
                   </span>{" "}
                   focusing on practical and scalable solutions.
                 </p>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col items-center gap-2 min-[400px]:flex-row min-[400px]:items-start w-full">
                   <Link
-                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300 w-full max-w-[300px] sm:w-auto"
                     href="#contact"
                   >
                     Learn More
@@ -137,22 +137,23 @@ export default function Component() {
                 </div>
               </div>
               <img
-                alt="AI Consulting"
-                className="mx-auto w-full max-w-md h-auto rounded-xl"
+                className="order-1 md:order-2 mx-auto w-full max-w-md h-auto rounded-xl"
                 src="/prototype.svg"
+                alt="AI Consulting"
               />
             </div>
           </div>
         </section>
+
         <section className="w-full py-10">
           <div className="container px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
               <img
-                alt="AI Strategy"
-                className="mx-auto w-full max-w-md h-auto rounded-xl"
+                className="order-1 mx-auto w-full max-w-md h-auto rounded-xl"
                 src="/strategy.svg"
+                alt="AI Strategy"
               />
-              <div className="flex flex-col justify-center space-y-4">
+              <div className="order-2 flex flex-col justify-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                   AI Strategy Development
                 </h2>
@@ -161,9 +162,9 @@ export default function Component() {
                   customized AI strategy, implement cutting-edge technologies,
                   and optimize AI-powered solutions for maximum impact.
                 </p>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col items-center gap-2 min-[400px]:flex-row min-[400px]:items-start w-full">
                   <Link
-                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                    className="bg-gradient-to-r from-purple-500 to-indigo-600 inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300 w-full max-w-[300px] sm:w-auto"
                     href="#contact"
                   >
                     Learn More
