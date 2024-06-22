@@ -9,15 +9,18 @@ export default function Component() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isMobileMenuOpen && !event.target.closest('.menu-button, .mobile-menu')) {
+      if (
+        isMobileMenuOpen &&
+        !event.target.closest(".menu-button, .mobile-menu")
+      ) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen]);
 
@@ -116,7 +119,7 @@ export default function Component() {
         >
           <div className="container px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-              <div className="order-2 md:order-1 flex flex-col justify-center space-y-4">
+              <div className="order-2 md:order-1 flex flex-col justify-center space-y-4 text-center md:text-left items-center md:items-start">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                   Rapid Prototyping
                 </h2>
@@ -153,7 +156,7 @@ export default function Component() {
                 src="/strategy.svg"
                 alt="AI Strategy"
               />
-              <div className="order-2 flex flex-col justify-center space-y-4">
+              <div className="order-2 flex flex-col justify-center space-y-4 text-center md:text-left items-center md:items-start">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                   AI Strategy Development
                 </h2>
@@ -174,6 +177,7 @@ export default function Component() {
             </div>
           </div>
         </section>
+
         <section
           id="contact"
           className="w-full min-h-screen pt-12 mt-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
