@@ -26,7 +26,7 @@ export default function Component() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
             </svg>
           </button>
-          <nav className={`lg:flex gap-4 sm:gap-6 ${isMobileMenuOpen ? "absolute top-12 left-0 w-full h-28 bg-black shadow-lg py-4 flex flex-col items-center justify-around" : "hidden"} lg:block`}>
+          <nav className={`lg:flex gap-4 sm:gap-6 ${isMobileMenuOpen ? "absolute top-10 right-10 w-3/6 h-28 bg-[#1F2937] shadow-lg py-4 flex flex-col items-center justify-around rounded-md" : "hidden"} lg:block`}>
             <Link className="text-sm font-medium hover:underline underline-offset-4 cursor-pointer" href="#services">
               Services
             </Link>
@@ -37,8 +37,8 @@ export default function Component() {
         </div>
       </header>
       <main className="flex-1">
-      <section id="particles-js" className="mt-[50px] md:mt-[150px]"></section>
-      <section className="relative top-0 w-full min-h-screen md:min-h-0 py-12 md:py-24 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-800px]">
+      <section id="particles-js" className="mt-[50px]"></section>
+      <section className="relative top-0 w-full min-h-screen md:min-h-0 py-12 md:py-24 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-680px]">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2 mb-4">
