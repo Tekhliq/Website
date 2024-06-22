@@ -79,7 +79,7 @@ export default function Component() {
       </header>
       <main className="flex-1">
         <section id="particles-js" className="mt-[50px]"></section>
-        <section className="relative top-0 w-full min-h-screen md:min-h-screen py-12 md:py-0 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-680px]">
+        <section className="relative top-0 w-full min-h-[70vh] md:min-h-screen pt-12 md:py-0 lg:py-32 xl:py-48 mt-[-50px] md:mt-[-680px]">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2 mb-4">
