@@ -147,7 +147,6 @@ export default function Component() {
             </div>
           </div>
         </section>
-
         <section className="w-full py-10">
           <div className="container px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
@@ -165,8 +164,8 @@ export default function Component() {
                   <span className="underline decoration-purple-600">
                     develop a customized AI strategy,
                   </span>{" "}
-                    implement cutting-edge technologies,
-                  and optimize AI-powered solutions for maximum impact.
+                  implement cutting-edge technologies, and optimize AI-powered
+                  solutions for maximum impact.
                 </p>
                 <div className="flex gap-2 justify-center md:justify-start">
                   <Link
