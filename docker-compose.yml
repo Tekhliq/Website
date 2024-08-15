@@ -7,8 +7,6 @@ services:
       - '3000'
     environment:
       - NODE_ENV=production
-    volumes:
-      - .:/app
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.tekhliq-website.rule=Host(`infra.tekhliq.com`)"

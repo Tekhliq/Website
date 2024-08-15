@@ -7,11 +7,14 @@ WORKDIR /app
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --production
+# Install ALL dependencies, including devDependencies
+RUN npm install
 
 # Copy the rest of the application code
 COPY . .
+
+# Install additional necessary packages
+RUN npm install -D autoprefixer postcss tailwindcss
 
 # Build the Next.js app
 RUN npm run build
