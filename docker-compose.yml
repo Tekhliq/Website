@@ -11,7 +11,7 @@ services:
       - .:/app
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.tekhliq-website.rule=Host(`your-domain.com`)"
+      - "traefik.http.routers.tekhliq-website.rule=Host(`infra.tekhliq.com`)"
       - "traefik.http.routers.tekhliq-website.entrypoints=websecure"
       - "traefik.http.routers.tekhliq-website.tls.certresolver=letsencrypt"
       - "traefik.http.services.tekhliq-website.loadbalancer.server.port=3000"
